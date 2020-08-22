@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/misestilos.css">
+    <title>Menu Top</title>
+
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<link rel="stylesheet" href="css/mi-slider.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
+
+	<script type="text/javascript"> 
+		$(window).on('load', function() {
+		    $('#slider').nivoSlider(); 
+		}); 
+	</script>
+</head>
+<body>  
+     <input type="checkbox" id="btn-nav" class="checkbox">
+    <header>
+      <div class="header-container">
+        <img class="header-logo" src="./img/logo.png">
+        <label for="btn-nav" class="btn-label">
+          <div class="header-button"></div>
+        </label>
+      </div>
+    </header>
+    
+    <nav class="menu">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contacto</li>
+      </ul>      
+      <ul>
+        <a href="" class="icon-facebook"></a>
+        <a href="" class="icon-twitter"></a>
+        <a href="" class="icon-youtube"></a>
+        <a href="" class="icon-instagram"></a>
+      </ul>      
+    </nav>
+    
+	<div class="slider-wrapper theme-mi-slider">
+		<div id="slider" class="nivoSlider">     
+		    <img src="img/1.jpg" alt="" title="#htmlcaption1" />    
+		    <img src="img/2.jpg" alt="" title="#htmlcaption2" />    
+		    <img src="img/3.jpg" alt="" title="#htmlcaption3" />     
+		</div> 
+		<div id="htmlcaption1" class="nivo-html-caption">     
+		    <h1>Hora de Cerveza</h1>
+		    <p>Envios a domicilio de las mejores cervezas.</p>
+		</div>
+		<div id="htmlcaption2" class="nivo-html-caption">     
+		    <h1>Arma tu previa con HDC</h1>
+		</div>
+		<div id="htmlcaption3" class="nivo-html-caption">     
+		    <h1>Contactanos</h1>
+            <p>Whatsapp: 11-6035-7277.</p>
+		</div>
+	</div>
+    
+     <main class="main">
+        <div class="contenedor">
+            <section class="info">
+            <article class="info__columna">
+            <img src="img/img1.jpg" alt="" class="info__img">
+                <h2 class="info__titulo">Servicio Técnico</h2>
+                <p class="info__txt">Formateo de PC. Instalación de Sistemas Operativos y todo tipo de Programas. Corrección de errores en disco. Limpieza de virus. Reemplazo de componentes.</p>
+            </article>
+                <article class="info__columna">
+            <img src="img/img1.jpg" alt="" class="info__img">
+                <h2 class="info__titulo">Armados de Redes</h2>
+                <p class="info__txt">Planificación y armado de redes de acuerdo a sus necesidades e infraestructura. Administramos y actualizamos su red corporativa.</p>
+            </article>
+                <article class="info__columna">
+            <img src="img/img1.jpg" alt="" class="info__img">
+                <h2 class="info__titulo">Diseño WEB</h2>
+                <p class="info__txt">Sitios diseñados a la medida de la necesidad de su proyecto o Empresa. Maquetados en HTML 5 y CSS 3. Altamente personalizado.</p>
+            </article>
+            </section>
+        <section class="cursos">
+            <h2 class="section__titulo">Nuestros Servicios</h2>
+            <div class="cursos__columna">
+                <img src="img/img2.jpg" alt="" class="cursos__img">
+            <div class="cursos__descripcion">
+                <h3 class="cursos__titulo">Servicio Técnico</h3>
+                <p class="cursos__txt">Formateo de PC. Instalación de Sistemas Operativos y todo tipo de Programas. Corrección de errores en disco. Limpieza de virus. Reemplazo de componentes.</p>
+            </div>
+            </div>
+            <div class="cursos__columna">
+                <img src="img/img2.jpg" alt="" class="cursos__img">
+            <div class="cursos__descripcion">
+                <h3 class="cursos__titulo">Armados de Redes</h3>
+                <p class="cursos__txt">Planificación y armado de redes de acuerdo a sus necesidades e infraestructura. Administramos y actualizamos su red corporativa.</p>
+            </div>
+            </div>
+            <div class="cursos__columna">
+                <img src="img/img2.jpg" alt="" class="cursos__img">
+            <div class="cursos__descripcion">
+                <h3 class="cursos__titulo">Diseño WEB</h3>
+                <p class="cursos__txt">Sitios diseñados a la medida de la necesidad de su proyecto o Empresa. Maquetados en HTML 5 y CSS 3. Altamente personalizado.</p>
+            </div>
+            </div>
+            <div class="cursos__columna">
+                <img src="img/img2.jpg" alt="" class="cursos__img">
+            <div class="cursos__descripcion">
+                <h3 class="cursos__titulo">Programas Especiales para Pymes</h3>
+                <p class="cursos__txt">Una solución exclusiva para EMPRESAS PYMES que le permitirá tener una fuerte presencia en Internet, y solo vincularse con nosotros mediante Contrato de Servicio y Abono mensual.</p>
+            </div>
+            </div>
+            
+            </section>  
+         
+            
+            
+        </div>
+        </main>
+        <footer class="footer">
+        <div class="social">
+            <a href="" class="icon-facebook"></a>
+            <a href="" class="icon-instagram"></a>
+            <a href="" class="icon-gplus"></a>
+            
+        </div>
+        <p class="copy">&copy; HDC - Todos los derechos reservados.</p>
+           </footer>
+    
+</body>
+</html>

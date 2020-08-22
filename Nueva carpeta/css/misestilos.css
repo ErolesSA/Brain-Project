@@ -1,0 +1,227 @@
+
+
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5{
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+}
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #FBA919;
+}
+.contenedor{
+    margin: auto;
+    width: 98%;
+}
+
+
+/*------------------Estilos de header---------------*/
+
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 5px;
+    color: #fff;
+}
+
+.icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #FBA919;
+    
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+
+
+
+/*-----------------Estilos de info-----------------*/
+
+.info__columna{
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px:
+}
+
+/*-----------------Estilos de Cursos-----------------*/
+
+.cursos__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.cursos__descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    width: 98%;
+    height: 100%;
+    padding: 5px;
+}
+
+.cursos__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+/*-----------------Estilos de footer-----------------*/
+
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer [class^="icon-"]{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+
+/*-----------------Estilos de responsive-----------------*/
+
+@media(min-width:480px){
+    .logo{
+        font-size: 40px;
+    }
+    .banner__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .banner__txt{
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -90px;
+    }
+    
+    .info__columna{
+        width: 32%;
+    }
+    .info__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    
+    .cursos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -90px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .section__titulo{
+        width: 100%;
+    }
+    .cursos__columna{
+        width: 49%;
+    }
+    .footer [class^="icon-"]{
+        margin: 0 10px;
+    }
+}
+
+@media(min-width:768px){
+    .banner__titulo{
+        font-size: 50px;
+    }
+    .cursos__titulo{
+        font-size: 30px;
+    }
+    @media(min-width:1024px){
+        .contenedor{
+            width: 1000px;
+        }
+        
+        .nav{
+            position: static;
+            width: auto;
+        }
+        .menu{
+            display: flex;
+        }
+        .icon-menu{
+            display: none;
+        }
+        .menu__link{
+            background: none;
+            font-size: 20px;
+        }
+        .cursos__titulo{
+        font-size: 30px;
+    }
+        .select{
+            background: #FBA919;
+            color: #fff;
+        }
+    .banner__titulo{
+        font-size: 60px;
+    }
+        .cursos__txt{
+            font-size: 20px;
+        }
+        .cursos__descripcion{
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .info__titulo{
+            font-size: 40px;
+            text-align: center;
+        }
+        .section__titulo{
+            font-size: 50px;
+            margin: 30px;
+        }
+    .cursos__titulo{
+        font-size:20px;
+        
+    }
+}
