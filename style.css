@@ -302,6 +302,34 @@ nav .navbar .links li .sub-menu li{
   max-width: 100%;
 } 
 }
+/*--------------------------------------------------------------
+# Whatsapp
+--------------------------------------------------------------*/
+#whatsap .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#27EA08 ;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+#whatsap .float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+#whatsap .my-float{
+	margin-top:16px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Header
@@ -851,6 +879,54 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: white ;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid white;
+  border-top-color: black;
+  border-bottom-color: black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
